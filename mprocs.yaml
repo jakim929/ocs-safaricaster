@@ -1,0 +1,14 @@
+procs:
+  frame-worker:
+    cwd: apps/safaricaster-frame-worker
+    shell: pnpm run dev
+  ipfs-storage-worker:
+    cwd: apps/ipfs-storage-worker
+    shell: pnpm run dev
+  frame-debugger:
+    cwd: apps/frame-debugger
+    shell: pnpm run dev
+  screenshot-uploader:
+    cwd: apps/safaricaster-screenshot-uploader
+    shell: pnpm run dev
+

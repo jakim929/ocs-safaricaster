@@ -1,0 +1,21 @@
+{
+	"name": "dailyteam-monorepo",
+	"version": "0.0.0",
+	"license": "MIT",
+	"scripts": {
+		"dev:safaricaster": "pnpm mprocs",
+		"format": "biome format . --write",
+		"format:check": "biome format .",
+		"lint": "biome check . --apply-unsafe",
+		"lint:check": "biome check . --verbose",
+		"clean": "nx run-many --target=clean"
+	},
+	"private": true,
+	"devDependencies": {
+		"@biomejs/biome": "1.7.3",
+		"@nx/js": "19.0.3",
+		"concurrently": "^8.2.2",
+		"mprocs": "^0.6.4",
+		"nx": "19.0.3"
+	}
+}

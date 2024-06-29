@@ -1,0 +1,41 @@
+{
+	"name": "@dailyteam/safaricaster-frame-worker",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "pnpm wrangler:dev",
+		"wrangler:dev": "wrangler dev --show-interactive-dev-session false src/index.tsx",
+		"wrangler:deploy": "wrangler deploy --minify src/index.tsx",
+		"wrangler:static": "cp -r ./node_modules/frog/_lib/ui/.frog ./public/frog",
+		"migrations:dev": "wrangler d1 execute safaricaster-d1-database --file=./dbSchema.sql --local",
+		"r2:object:example:local": "wrangler r2 object put safaricaster-r2-bucket/1716340671499.jpeg --local --file ./1716340671499.jpeg",
+		"format": "biome format . --write",
+		"format:check": "biome format .",
+		"lint": "biome check . --apply-unsafe",
+		"lint:check": "biome check . --verbose",
+		"clean": "rm -rf .wrangler"
+	},
+	"dependencies": {
+		"@cf-wasm/photon": "^0.1.20",
+		"@dailyteam/ipfs-storage-worker": "workspace:*",
+		"@hono/zod-validator": "^0.2.1",
+		"@tsndr/cloudflare-worker-jwt": "^2.5.3",
+		"frog": "latest",
+		"hono": "^4",
+		"hono-og": "^0.0.27",
+		"kysely": "^0.27.3",
+		"kysely-d1": "^0.3.0",
+		"openai": "^4.47.1",
+		"uuid": "^9.0.1",
+		"viem": "^2.10.8",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240512.0",
+		"@types/node": "^20.12.12",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.9.1",
+		"typescript": "^5.4.5",
+		"wrangler": "^3.61.0"
+	}
+}

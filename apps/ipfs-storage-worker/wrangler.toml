@@ -1,0 +1,37 @@
+name = "ipfs-storage-worker"
+compatibility_date = "2024-04-03"
+
+[dev]
+port = 9001
+
+# [[queues.producers]]
+#  queue = "ipfs-storage-worker-job-queue"
+#  binding = "JOB_QUEUE"
+
+# [[queues.consumers]]
+#  queue = "ipfs-storage-worker-job-queue"
+#  max_batch_size = 10 # optional: defaults to 10
+#  max_batch_timeout = 5 # optional: defaults to 5 seconds
+
+[[r2_buckets]]
+binding = 'IPFS_STORAGE_CACHE_BUCKET' 
+bucket_name = 'ipfs-storage-cache'
+
+# [vars]
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"

@@ -1,0 +1,15 @@
+{
+	"extends": "nx/presets/npm.json",
+	"$schema": "./node_modules/nx/schemas/nx-schema.json",
+
+	"targetDefaults": {
+		"dev": {
+			"cache": true,
+			"dependsOn": ["^build"]
+		},
+		"build:types": {
+			"cache": true,
+			"dependsOn": ["^build:types"]
+		}
+	}
+}

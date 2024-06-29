@@ -1,0 +1,2 @@
+forge-std/=contracts/lib/forge-std/src/
+solady/=contracts/lib/solady/src/

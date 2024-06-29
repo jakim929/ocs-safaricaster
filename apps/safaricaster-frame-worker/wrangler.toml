@@ -1,0 +1,31 @@
+name = "safaricaster-frame-worker"
+compatibility_date = "2024-04-03"
+compatibility_flags = [ "nodejs_compat" ]
+
+
+[site]
+bucket = "./public"
+
+
+[[services]]
+binding = "IPFS_STORAGE_WORKER"
+service = "ipfs-storage-worker"
+
+[[r2_buckets]]
+binding = "SAFARICASTER_R2_BUCKET"
+bucket_name = "safaricaster-r2-bucket"
+
+[[d1_databases]]
+binding = "SAFARICASTER_D1_DATABASE"
+database_name = "safaricaster-d1-database"
+database_id = "bd97b31d-fcf4-4277-ab10-ddd2ce78db13"
+
+[[queues.producers]]
+ queue = "safaricaster-worker-queue"
+ binding = "QUEUE"
+
+[[queues.consumers]]
+ queue = "safaricaster-worker-queue"
+  max_batch_size = 1
+  max_batch_timeout = 1
+  max_retries = 5

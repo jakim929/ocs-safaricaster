@@ -1,0 +1,18 @@
+{
+	"name": "@dailyteam/safaricaster-screenshot-uploader",
+	"scripts": {
+		"start": "tsx src/main.ts",
+		"dev": "tsx src/mockMain.ts"
+	},
+	"devDependencies": {
+		"puppeteer": "^22.9.0",
+		"puppeteer-extra": "^3.3.6",
+		"puppeteer-extra-plugin-stealth": "^2.11.2",
+		"tsx": "^4.9.1"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"znv": "^0.4.0",
+		"zod": "^3.23.8"
+	}
+}

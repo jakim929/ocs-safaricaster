@@ -1,0 +1,10 @@
+{
+	"name": "@dailyteam/frame-debugger",
+	"scripts": {
+		"dev": "pnpm dlx frog"
+	},
+
+	"devDependencies": {
+		"frog": "latest"
+	}
+}

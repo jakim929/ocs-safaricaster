@@ -1,0 +1,24 @@
+{
+	"name": "@dailyteam/ipfs-storage-worker",
+	"types": "types/index.d.ts",
+	"scripts": {
+		"build:types": "tsc --declaration --emitDeclarationOnly && resolve-tspaths",
+		"dev": "wrangler dev --show-interactive-dev-session false src/index.ts",
+		"deploy": "wrangler deploy --minify src/index.ts",
+		"clean": "rm -rf .wrangler"
+	},
+	"dependencies": {
+		"@helia/unixfs": "^3.0.6",
+		"@hono/zod-validator": "^0.2.1",
+		"blockstore-core": "^4.4.1",
+		"hono": "^4",
+		"ipfs-unixfs-importer": "^15.2.5",
+		"json-stringify-deterministic": "^1.0.12",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240403.0",
+		"resolve-tspaths": "^0.8.19",
+		"wrangler": "latest"
+	}
+}
