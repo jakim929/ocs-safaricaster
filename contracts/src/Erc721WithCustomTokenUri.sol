@@ -95,9 +95,10 @@ contract Erc721WithCustomTokenUri is ERC721, EIP712, Ownable {
         address signer = ECDSA.recover(digest, v, r, s);
         require(signer == owner(), "Invalid signature");
 
+        usedNonces[issuance.nonce] = true;
+
         uint256 newTokenId = _setUriAndMint(_to, issuance.tokenUri);
 
-        usedNonces[issuance.nonce] = true;
         return newTokenId;
     }
 
