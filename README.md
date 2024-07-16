@@ -1,10 +1,10 @@
 # Safaricaster
 
-Safaricaster is a real-time, frame game where players spot and mint wildlife fauna NFT at a waterhole in the Namibia Desert.
+Safaricaster is a real-time, livestream frame where players spot and mint wildlife fauna NFT at a waterhole in the Namib Desert.
 
 ## How it works
 
-Players follow along the [NamibiaCam live stream](https://www.youtube.com/@NamibiaCam/streams) via screenshots in-frame and are alerted by chatGPT when an animal is spotted. This grants players the chance to mint the serendipitous encounter as a personalized NFT.   
+Players follow along the [NamibiaCam live stream](https://www.youtube.com/@NamibiaCam/streams) via screenshots in-frame and are alerted by chatGPT when an animal is spotted. This grants players the chance to mint the serendipitous encounter as a personalized NFT. At launch, the stream is set 4 hours behind UTC to align with the majority of Warpcast users' timezones.
 
 
 Personalized NFTs entail:
@@ -14,12 +14,12 @@ Personalized NFTs entail:
 * The player’s FID & Farcaster username  
 
 
-Mints cost 0.00099 ETH with proceeds going entirely to [The Narrative Namibia](https://narrativenamibia.com/products/donate-to-the-waterhole?utm_campaign=NamibiaCam&utm_content=279546882&utm_medium=social&utm_source=facebook&hss_channel=fbp-105769169133131). Donations help maintain and improve the Namib Desert waterhole, the equipment and cameras, and the funding of new cameras in Namibia.
+Mints cost 0.00099 ETH with proceeds going to Namib Desert conservation. Donations will help ensure the preservation and protection of Namib Desert fauna, plants, and their habitats.
 
 
 ## Getting Started
 
-Visit [Safaricaster](http://warpcast.com/mattkim) TODO on Warpcast to join the livestream now!
+Visit [Safaricaster](http://safaricaster.xyz) on Warpcast to join the livestream now!
 
 ## About NamibiaCam
 
@@ -30,11 +30,9 @@ _"NamibiaCam’s Namib Desert waterhole lies within the Gondwana Namib Park - bo
 
 ## Help
 
-DM [@safaricaster](https://warpcast.com/mattkim) on Warpcast for assistance.
+DM [@mattkim](https://warpcast.com/mattkim) or [@jameskim](https://warpcast.com/jameskim) on Warpcast for assistance.
 
 ## Authors
-
-DAILYTEAM TODO
 
 James Kim: [@jameskim](https://warpcast.com/jameskim)
 
